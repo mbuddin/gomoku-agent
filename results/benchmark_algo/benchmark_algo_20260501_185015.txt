@@ -1,0 +1,60 @@
+Gomoku Algorithm Comparison: Minimax vs Alpha-Beta  (run_id=20260501_185015)
+Started: 2026-05-01 18:50:15
+Weights: {"five": 1000000, "open_four": 100000, "open_three": 3000, "open_two": 100, "rush_four": 8000, "sleep_three": 400, "sleep_two": 15}
+Note: Minimax colour alternates each game to balance first-mover advantage.
+
+=== Depth=1  Minimax vs Alpha-Beta  games=3 ===
+  Game   1: mm=Black  winner=Black  moves= 10  time=0.08s  mm_nodes=65  ab_nodes=80  node_reduction=-23.1%
+  Game   2: mm=White  winner=White  moves=  9  time=0.07s  mm_nodes=65  ab_nodes=64  node_reduction=+1.5%
+  Game   3: mm=Black  winner=Black  moves=  8  time=0.07s  mm_nodes=49  ab_nodes=64  node_reduction=-30.6%
+
+  Results: Black wins=2  White wins=1  Draws=0
+
+  Minimax  (depth=1):
+    avg_nodes=13  max_nodes=16  avg_time=0.0073s  pruning_rate=0.0%  avg_EBF=12.79
+
+  AlphaBeta (depth=1):
+    avg_nodes=16  max_nodes=16  avg_time=0.0093s  pruning_rate=0.0%  avg_EBF=16.00
+
+  >>> Node reduction:  -16.2%   Time reduction: -18.6%
+      Speedup factor:  0.78x  (minimax_avg / alphabeta_avg)
+
+=== Depth=2  Minimax vs Alpha-Beta  games=3 ===
+  Game   1: mm=Black  winner=Black  moves= 88  time=10.84s  mm_nodes=9524  ab_nodes=3538  node_reduction=+62.9%
+  Game   2: mm=White  winner=White  moves= 63  time=8.52s  mm_nodes=6632  ab_nodes=2364  node_reduction=+64.4%
+  Game   3: mm=Black  winner=Black  moves= 36  time=4.56s  mm_nodes=3678  ab_nodes=1331  node_reduction=+63.8%
+
+  Results: Black wins=2  White wins=1  Draws=0
+
+  Minimax  (depth=2):
+    avg_nodes=211  max_nodes=241  avg_time=0.1875s  pruning_rate=0.0%  avg_EBF=14.53
+
+  AlphaBeta (depth=2):
+    avg_nodes=78  max_nodes=149  avg_time=0.0676s  pruning_rate=12.5%  avg_EBF=8.82
+
+  >>> Node reduction:  +63.5%   Time reduction: +64.3%
+      Speedup factor:  2.77x  (minimax_avg / alphabeta_avg)
+
+=== Depth=3  Minimax vs Alpha-Beta  games=3 ===
+  Game   1: mm=Black  winner=Black  moves= 18  time=27.99s  mm_nodes=28269  ab_nodes=2979  node_reduction=+89.5%
+  Game   2: mm=White  winner=White  moves= 11  time=17.14s  mm_nodes=17631  ab_nodes=1714  node_reduction=+90.3%
+  Game   3: mm=Black  winner=Black  moves= 12  time=15.91s  mm_nodes=17226  ab_nodes=1831  node_reduction=+89.4%
+
+  Results: Black wins=2  White wins=1  Draws=0
+
+  Minimax  (depth=3):
+    avg_nodes=3006  max_nodes=3616  avg_time=2.7090s  pruning_rate=0.0%  avg_EBF=14.43
+
+  AlphaBeta (depth=3):
+    avg_nodes=326  max_nodes=601  avg_time=0.2079s  pruning_rate=8.6%  avg_EBF=6.88
+
+  >>> Node reduction:  +89.7%   Time reduction: +92.7%
+      Speedup factor:  13.03x  (minimax_avg / alphabeta_avg)
+
+=== Algorithm Comparison Summary ===
+  depth    mm_avg_nodes    ab_avg_nodes   node_red%   ab_prune%   speedup
+      1              13              16      -16.2%       0.0%     0.78x
+      2             211              78       63.5%      12.5%     2.77x
+      3            3006             326       89.7%       8.6%    13.03x
+
+Finished: 2026-05-01 18:51:40

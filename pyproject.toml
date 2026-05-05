@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gomoku-agent"
+version = "0.1.0"
+description = "Gomoku (Five-in-a-Row) game-playing agent with Minimax + Alpha-Beta pruning"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2.3",
+    "pygame>=2.6.1",
+]
+
+[project.scripts]
+gomoku = "main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.5",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gomoku*"]

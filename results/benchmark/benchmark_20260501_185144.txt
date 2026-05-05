@@ -1,0 +1,175 @@
+Gomoku AI-vs-AI Benchmark  (run_id=20260501_185144)
+Started: 2026-05-01 18:51:44
+Weights: {"five": 1000000, "open_four": 100000, "open_three": 3000, "open_two": 100, "rush_four": 8000, "sleep_three": 400, "sleep_two": 15}
+
+Depth matrix: [1, 2, 3]  games_per_matchup=3
+
+=== Matchup: Black(depth=1) vs White(depth=1)  games=3 ===
+  Game   1: winner=Black  moves= 10  time=0.08s  b_nodes=65 b_prunes=0  w_nodes=80 w_prunes=0
+  Game   2: winner=White  moves=  9  time=0.08s  b_nodes=64 b_prunes=0  w_nodes=65 w_prunes=0
+  Game   3: winner=Black  moves=  8  time=0.07s  b_nodes=49 b_prunes=0  w_nodes=64 w_prunes=0
+
+  Results: Black wins=2  White wins=1  Draws=0
+  Black win-rate: 66.7%   White win-rate: 33.3%
+
+  Black (depth=1) efficiency:
+    total moves=13  avg_time=0.0084s  max_time=0.0155s
+    avg_nodes=14  max_nodes=16  total_nodes=178
+    avg_prunes=0.0  total_prunes=0  pruning_rate=0.0%  avg_EBF=13.69
+
+  White (depth=1) efficiency:
+    total moves=14  avg_time=0.0086s  max_time=0.0107s
+    avg_nodes=15  max_nodes=16  total_nodes=209
+    avg_prunes=0.0  total_prunes=0  pruning_rate=0.0%  avg_EBF=14.93
+
+=== Matchup: Black(depth=1) vs White(depth=2)  games=3 ===
+  Game   1: winner=White  moves= 17  time=0.35s  b_nodes=8 b_prunes=0  w_nodes=676 w_prunes=94
+  Game   2: winner=White  moves= 15  time=0.24s  b_nodes=7 b_prunes=0  w_nodes=476 w_prunes=90
+  Game   3: winner=Black  moves= 30  time=0.44s  b_nodes=15 b_prunes=0  w_nodes=866 w_prunes=142
+
+  Results: Black wins=1  White wins=2  Draws=0
+  Black win-rate: 33.3%   White win-rate: 66.7%
+
+  Black (depth=1) efficiency:
+    total moves=30  avg_time=0.0000s  max_time=0.0004s
+    avg_nodes=1  max_nodes=1  total_nodes=30
+    avg_prunes=0.0  total_prunes=0  pruning_rate=0.0%  avg_EBF=1.00
+
+  White (depth=2) efficiency:
+    total moves=32  avg_time=0.0322s  max_time=0.0622s
+    avg_nodes=63  max_nodes=115  total_nodes=2018
+    avg_prunes=10.2  total_prunes=326  pruning_rate=13.9%  avg_EBF=7.94
+
+=== Matchup: Black(depth=1) vs White(depth=3)  games=3 ===
+  Game   1: winner=White  moves=111  time=8.30s  b_nodes=55 b_prunes=0  w_nodes=17767 w_prunes=1594
+  Game   2: winner=Black  moves= 20  time=1.25s  b_nodes=10 b_prunes=0  w_nodes=3181 w_prunes=295
+  Game   3: winner=Black  moves= 44  time=2.71s  b_nodes=22 b_prunes=0  w_nodes=6681 w_prunes=588
+
+  Results: Black wins=2  White wins=1  Draws=0
+  Black win-rate: 66.7%   White win-rate: 33.3%
+
+  Black (depth=1) efficiency:
+    total moves=87  avg_time=0.0000s  max_time=0.0005s
+    avg_nodes=1  max_nodes=1  total_nodes=87
+    avg_prunes=0.0  total_prunes=0  pruning_rate=0.0%  avg_EBF=1.00
+
+  White (depth=3) efficiency:
+    total moves=88  avg_time=0.1393s  max_time=0.3222s
+    avg_nodes=314  max_nodes=666  total_nodes=27629
+    avg_prunes=28.1  total_prunes=2477  pruning_rate=8.2%  avg_EBF=6.80
+
+=== Matchup: Black(depth=2) vs White(depth=1)  games=3 ===
+  Game   1: winner=Black  moves= 20  time=0.31s  b_nodes=600 b_prunes=115  w_nodes=25 w_prunes=0
+  Game   2: winner=Black  moves= 18  time=0.32s  b_nodes=578 b_prunes=88  w_nodes=24 w_prunes=0
+  Game   3: winner=Black  moves= 12  time=0.19s  b_nodes=338 b_prunes=63  w_nodes=21 w_prunes=0
+
+  Results: Black wins=3  White wins=0  Draws=0
+  Black win-rate: 100.0%   White win-rate: 0.0%
+
+  Black (depth=2) efficiency:
+    total moves=25  avg_time=0.0318s  max_time=0.0570s
+    avg_nodes=61  max_nodes=103  total_nodes=1516
+    avg_prunes=10.6  total_prunes=266  pruning_rate=14.9%  avg_EBF=7.79
+
+  White (depth=1) efficiency:
+    total moves=25  avg_time=0.0011s  max_time=0.0093s
+    avg_nodes=3  max_nodes=16  total_nodes=70
+    avg_prunes=0.0  total_prunes=0  pruning_rate=0.0%  avg_EBF=2.80
+
+=== Matchup: Black(depth=2) vs White(depth=2)  games=3 ===
+  Game   1: winner=Black  moves= 86  time=2.88s  b_nodes=2515 b_prunes=512  w_nodes=2531 w_prunes=538
+  Game   2: winner=Black  moves= 36  time=1.10s  b_nodes=1012 b_prunes=228  w_nodes=1113 w_prunes=196
+  Game   3: winner=Black  moves= 26  time=0.77s  b_nodes=751 b_prunes=158  w_nodes=787 w_prunes=159
+
+  Results: Black wins=3  White wins=0  Draws=0
+  Black win-rate: 100.0%   White win-rate: 0.0%
+
+  Black (depth=2) efficiency:
+    total moves=74  avg_time=0.0315s  max_time=0.0559s
+    avg_nodes=58  max_nodes=96  total_nodes=4278
+    avg_prunes=12.1  total_prunes=898  pruning_rate=17.3%  avg_EBF=7.60
+
+  White (depth=2) efficiency:
+    total moves=74  avg_time=0.0327s  max_time=0.0586s
+    avg_nodes=60  max_nodes=106  total_nodes=4431
+    avg_prunes=12.1  total_prunes=893  pruning_rate=16.8%  avg_EBF=7.74
+
+=== Matchup: Black(depth=2) vs White(depth=3)  games=3 ===
+  Game   1: winner=White  moves=111  time=8.16s  b_nodes=55 b_prunes=0  w_nodes=17767 w_prunes=1594
+  Game   2: winner=Black  moves= 20  time=1.27s  b_nodes=10 b_prunes=0  w_nodes=3181 w_prunes=295
+  Game   3: winner=Black  moves= 44  time=2.73s  b_nodes=22 b_prunes=0  w_nodes=6681 w_prunes=588
+
+  Results: Black wins=2  White wins=1  Draws=0
+  Black win-rate: 66.7%   White win-rate: 33.3%
+
+  Black (depth=2) efficiency:
+    total moves=87  avg_time=0.0000s  max_time=0.0004s
+    avg_nodes=1  max_nodes=1  total_nodes=87
+    avg_prunes=0.0  total_prunes=0  pruning_rate=0.0%  avg_EBF=1.00
+
+  White (depth=3) efficiency:
+    total moves=88  avg_time=0.1381s  max_time=0.3155s
+    avg_nodes=314  max_nodes=666  total_nodes=27629
+    avg_prunes=28.1  total_prunes=2477  pruning_rate=8.2%  avg_EBF=6.80
+
+=== Matchup: Black(depth=3) vs White(depth=1)  games=3 ===
+  Game   1: winner=Black  moves= 16  time=0.99s  b_nodes=2499 b_prunes=207  w_nodes=23 w_prunes=0
+  Game   2: winner=Black  moves= 10  time=0.67s  b_nodes=1689 b_prunes=160  w_nodes=20 w_prunes=0
+  Game   3: winner=White  moves= 15  time=1.12s  b_nodes=2774 b_prunes=300  w_nodes=23 w_prunes=0
+
+  Results: Black wins=2  White wins=1  Draws=0
+  Black win-rate: 66.7%   White win-rate: 33.3%
+
+  Black (depth=3) efficiency:
+    total moves=20  avg_time=0.1371s  max_time=0.2691s
+    avg_nodes=348  max_nodes=662  total_nodes=6962
+    avg_prunes=33.4  total_prunes=667  pruning_rate=8.7%  avg_EBF=7.03
+
+  White (depth=1) efficiency:
+    total moves=21  avg_time=0.0013s  max_time=0.0091s
+    avg_nodes=3  max_nodes=16  total_nodes=66
+    avg_prunes=0.0  total_prunes=0  pruning_rate=0.0%  avg_EBF=3.14
+
+=== Matchup: Black(depth=3) vs White(depth=2)  games=3 ===
+  Game   1: winner=Black  moves= 44  time=3.53s  b_nodes=7926 b_prunes=638  w_nodes=71 w_prunes=14
+  Game   2: winner=Black  moves= 10  time=0.67s  b_nodes=1669 b_prunes=159  w_nodes=52 w_prunes=14
+  Game   3: winner=White  moves= 15  time=1.15s  b_nodes=2774 b_prunes=300  w_nodes=55 w_prunes=14
+
+  Results: Black wins=2  White wins=1  Draws=0
+  Black win-rate: 66.7%   White win-rate: 33.3%
+
+  Black (depth=3) efficiency:
+    total moves=34  avg_time=0.1555s  max_time=0.2736s
+    avg_nodes=364  max_nodes=662  total_nodes=12369
+    avg_prunes=32.3  total_prunes=1097  pruning_rate=8.1%  avg_EBF=7.14
+
+  White (depth=2) efficiency:
+    total moves=35  avg_time=0.0018s  max_time=0.0219s
+    avg_nodes=5  max_nodes=50  total_nodes=178
+    avg_prunes=1.2  total_prunes=42  pruning_rate=19.1%  avg_EBF=2.26
+
+=== Matchup: Black(depth=3) vs White(depth=3)  games=3 ===
+  Game   1: winner=White  moves= 33  time=4.42s  b_nodes=5009 b_prunes=470  w_nodes=5849 w_prunes=529
+  Game   2: winner=Black  moves= 14  time=1.71s  b_nodes=2037 b_prunes=208  w_nodes=2137 w_prunes=203
+  Game   3: winner=Black  moves= 22  time=2.52s  b_nodes=3000 b_prunes=296  w_nodes=3576 w_prunes=308
+
+  Results: Black wins=2  White wins=1  Draws=0
+  Black win-rate: 66.7%   White win-rate: 33.3%
+
+  Black (depth=3) efficiency:
+    total moves=34  avg_time=0.1180s  max_time=0.2061s
+    avg_nodes=295  max_nodes=531  total_nodes=10046
+    avg_prunes=28.6  total_prunes=974  pruning_rate=8.8%  avg_EBF=6.66
+
+  White (depth=3) efficiency:
+    total moves=35  avg_time=0.1324s  max_time=0.2517s
+    avg_nodes=330  max_nodes=610  total_nodes=11562
+    avg_prunes=29.7  total_prunes=1040  pruning_rate=8.3%  avg_EBF=6.91
+
+=== Depth Scaling Curve (same depth, Black perspective) ===
+  depth   avg_nodes  avg_time_s  pruning_rate   avg_EBF
+      1          14      0.0084         0.0%     13.69
+      2          58      0.0315        17.3%      7.60
+      3         295      0.1180         8.8%      6.66
+
+Finished: 2026-05-01 18:52:32
